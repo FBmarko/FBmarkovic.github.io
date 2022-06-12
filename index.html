@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <title>Profil Sayfam</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      :root{
+        --light:#F1EBDF;
+        --dark:#26282C;
+      }
+      html[data-theme="light"]{
+        --dark:#F1EBDF;
+        --light:#26282C;
+      }
+      html,body{
+        background-color: var(--dark);
+        color: var(--light);
+      }
+      .tema_ikon{
+        color: var(--light);
+        cursor: pointer;
+        transition: 0.5s ease;
+      }
+      .tema_ikon:hover{
+        color: #E7BB47;
+      }
+      .flip{
+        transform: rotate(360deg) !important;
+      }
+    </style>
+  
+</head>
+<body id="body" class="text-info " >
+  
+
+  <!-- Navbar Baslangıcı -->
+  <nav class="navbar navbar-dark  shadow-sm fixed-top">
+    <div class="container-md ">
+      <a class="navbar-brand text-danger fw-bold fs-2 text-info" href="#Anasayfa">M.T</a>
+      
+      <i class="fas fa-sun fa-3x mt-3  tema_ikon"></i>
+     
+      
+      <div class="dropdown">
+        <button class="btn btn-secondary btn-danger btn-lg " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end bg-dark " aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item text-info" href="#Anasayfa">Anasayfa</a></li>
+          <li><a class="dropdown-item text-info" href="#Hakkimda">Hakkımda</a></li>
+          <li><a class="dropdown-item text-info" href="#Portfolio">Portfolio</a></li>
+          <li><a class="dropdown-item text-info" href="#Iletisim">İletişim</a></li>
+          <li><a class="dropdown-item text-info" href="projelerim.html" target="_blank">Projelerim</a></li>
+          <li><a class="dropdown-item text-info" href="deneme.html" target="_blank">Cv İndir</a></li>
+        </ul>
+      </div>
+     
+    </div>
+  </nav>
+  <!-- Navbar Sonu -->
+ <!-- Anasayfa Bölümü Başlangıcı -->
+ <section id="Anasayfa" class="w-100">
+ 
+  
+    <div class="carousel slide carousel-fade " data-bs-ride="carousel" id="slider1">
+     <ol class="carousel-indicators ">
+       <li data-bs-target="#slider1" data-bs-slide-to="0" class="active"></li>
+       <li data-bs-target="#slider1" data-bs-slide-to="1"></li>
+       <li data-bs-target="#slider1" data-bs-slide-to="2"></li>
+     </ol>
+      <div class="carousel-inner   ">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="img/3.jpg" alt="" class="d-block w-100  "style="height: 800px;">
+          <div class="carousel-caption d-none d-sm-block">
+            <h2>Merhaba</h2>
+
+        </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/2.jpg" alt="" class="d-block w-100  "style="height: 800px;" >
+          <div class="carousel-caption d-none d-sm-block">
+            <h2>Ben Mehmet Turan</h2>
+
+        </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/1.jpg" alt="" class="d-block w-100 " style="height: 800px;" >
+          <div class="carousel-caption d-none d-sm-block">
+            <a href="#Hakkimda"  class="text-info " style="height: 60px;">HAKKIMDA DAHA FAZLA BİLGİ</a>
+
+        </div>
+        </div>
+      </div>
+      <a href="#slider1" class="carousel-control-prev" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#slider1" class="carousel-control-next" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+</section>
+ <!-- Anasayfa Bölümü Sonu -->
+ <!-- Hakkımda Bölümü Başlangıcı -->
+ <section class="Hakkimda my-5" style="padding-top: 10px;" id="Hakkimda">
+  <div class="container my-5 " >
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h2 class="fw-bold mb-5">Hakkımda</h2>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="row ">
+      <div class="col-sm-3 ">
+        <img src="img/profile.png" class="img-fluid img-thumbnail rounded-circle" alt="">
+       <a href="deneme.html" target="_blank"  id="Cvindir" class="btn btn-success btn-sm w-50 my-sm-5" style="height: 30px;  ">CV İNDİR</a>
+      </div>
+      <div class="col-sm-3 text-info" style="padding-top: 3rem;  padding-left: 7rem; text-align: center;">
+        <h5 class="fs-5 vw-10"  >Merhaba Ben Mehmet Turan İnönü Üniversitesi Yazılım Mühendisliği Bölümü 1.Sınıf Öğrencisiyim İleride Oyun Programlama Ve Web Design Alanlarında Uzmanlaşmak İstiyorum. </h5>
+      </div>
+      <div class="col-sm-6 text-info text-center" style="padding-left: 100px;">
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="90"></div>
+            </div>
+          </div>
+    
+          <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="70"></div>
+            </div>
+          </div>
+    
+          <div class="skill">
+            <div class="skill-name">Javascript</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="60"></div>
+            </div>
+          </div>   
+          <div class="skill">
+            <div class="skill-name">Bootstrap</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="80"></div>
+            </div>
+          </div>         
+        </div>
+        </div>
+  <div class="container-lg my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="section-title text-center">
+          <h2 class="fw-bold mb-3">Yeterlilikler</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center bg-light">
+      <div class="col-md-6 col-lg-4">
+        <div class="service-item shadow-sm p-4 rounded ">
+          <div class="icon my-3 text-danger fs-2">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="fs-5 py-2">Web Geliştirici</h3>
+          <p class="text-muted">HTML ve JavaScript dillerinde 1 yıl tecrübem var.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-item shadow-sm p-4 rounded ">
+          <div class="icon my-3 text-danger fs-2">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="fs-5 py-2">Web Tasarım</h3>
+          <p class="text-muted">Css dilinde 1 yıllık tecrübem var.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-item shadow-sm p-4 rounded ">
+          <div class="icon my-3 text-danger fs-2">
+            <i class="fas fa-image"></i>
+          </div>
+          <h3 class="fs-5 py-2">Photoshop</h3>
+          <p class="text-muted">Fotoğraf düzenleme ile ilgili tecrübeye sahibim.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <!-- Hakkımda Bölümü Sonu -->
+ <!-- Portfolio Bölümü Başlangıcı -->
+ <section class="section-padding" id="Portfolio">
+  <div class="container-md my-sm-5 ">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
+        <h2 class="section-heading display-4">Portfolio</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="projelerim.html" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+            </div>
+        </div>
+        <img src="img/portfolio/1.png"  class="w-100 img-responsive "style="height:200.15px ;" alt="portfolio item">
+      </a>
+          
+          
+        
+      </div>
+       <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="projelerim.html" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+            </div>
+        </div>
+        <img src="img/portfolio/2.jpg"  class="w-100 img-responsive "style="height:200.15px ;" alt="portfolio item">
+      </a>
+          
+          
+        
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="projelerim.html" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+            </div>
+        </div>
+        <img src="img/portfolio/3.jpg"  class="w-100 img-responsive "style="height:200.15px ;" alt="portfolio item">
+      </a>
+          
+          
+        
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="projelerim.html" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+            </div>
+        </div>
+        <img src="img/portfolio/4.png"  class="w-100 img-responsive "style="height:200.15px ;" alt="portfolio item">
+      </a>
+          
+          
+        
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="projelerim.html" class="portfolio-link"  data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+            </div>
+        </div>
+        <img src="img/portfolio/5.jpg"  class="w-100 img-responsive "style="height:200.15px ;" alt="portfolio item">
+      </a>
+          
+          
+        
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="projelerim.html" class="portfolio-link"  data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+            </div>
+        </div>
+        <img src="img/portfolio/6.png"  class="w-100 img-responsive " style="height:200.15px ;" alt="portfolio item">
+      </a>
+          
+          
+        
+      </div>
+      
+  </div>
+  </div>
+ </section>
+
+ <!-- Portfolio Bölümü Sonu -->
+ <!-- İletişim Bölümü Başlangıcı -->
+ <section class="Iletisim py-5" id="Iletisim">
+  <div class="container-lg py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h2 class="fw-bold mb-5">İletişim</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <div class="contact-item d-flex mb-3">
+          <div class="icon fs-4 text-danger">
+            <i class="fas fa-envelope"></i>
+            <div class="text ms-3">
+              <h3 class="fs-5">Email</h3>
+              <p class="text-danger ">turanmehmet2702@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item d-flex mb-3">
+          <div class="icon fs-4 text-danger">
+            <i class="fas fa-phone"></i>
+            <div class="text ms-3">
+              <h3 class="fs-5">Phone</h3>
+              <p class="text-danger ">05522628026</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item d-flex">
+          <div class="icon fs-4 text-danger">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="text ms-3">
+              <h3 class="fs-5">Adres</h3>
+              <p class="text-danger ">İnönü Üniversitesi MALATYA/TÜRKİYE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 " style="background-color:#26282C;">
+        <div class="contact-form">
+          <form >
+            <div class="row my-3">
+              <div class="col-lg-6 mb-4">
+                <input type="text" placeholder="Adınız" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+              </div>
+             
+              <div class="col-lg-6 mb-4">
+                <input type="text" placeholder="Emailiniz" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+            
+              </div>
+              
+            </div>
+            <div class="row mb-4">
+              <div class="col-lg-12">
+              <input type="text" placeholder="Konu" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-lg-12">
+              <textarea placeholder="Mesajınız" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <button type="submit" class="btn btn-danger px-3">Mesaj Gönder</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>  
+ </section>
+ <!-- İletişim Bölümü Sonu -->
+ <!-- Footer Bölümü Başlangıcı -->
+ <footer class="footer-border-top py-4">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="m-0 text-center text-warning">&copy;2022 MEHMET TURAN</p>        
+      </div>
+    </div>
+  </div>
+ </footer>
+ <!-- Footer Bölümü Sonu -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+<script src="js/bootstrap.bundle.min.js">
+    
+</script>
+<script>
+  $(document).ready(function(){
+  $(".tema_ikon").on('click',function(){
+    $(".tema_ikon").toggleClass("flip");
+    $(".tema_ikon").toggleClass("fa-sun");
+    $(".tema_ikon").toggleClass("fa-moon");
+    let tema=$("html").attr("data-theme");
+    if(tema=="dark"){
+      $("html").attr("data-theme","light");
+    }
+    else if(tema=="light"){
+      $("html").attr("data-theme","dark");
+    }
+
+  }) ; 
+  });
+  $('.skill-per').each(function(){
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width",per+'%');
+        $({animatedValue: 0}).animate({animatedValue: per},{
+          duration: 1000,
+          step: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          },
+          complete: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          }
+        });
+      }); 
+
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Projelerjson</title>
+   
+    <script>
+        $(document).ready(function(){
+            var projeler=[
+                {
+                    "ProjeAdı":"Gülen Surat",
+                    "ProjeTarihi":"14.04.2022",
+                    "ProjeAçıklaması":"Gülen Surat Yapımı"   
+                },
+                {
+                    "ProjeAdı":"Hesap Makinesi",
+                    "ProjeTarihi":"07.04.2022",
+                    "ProjeAçıklaması":"HTML ve Js yardımı ile Hesap Makinesi Yapımı"
+                },
+                {
+                    "ProjeAdı":"Harita",
+                    "ProjeTarihi":"17.03.2022",
+                    "ProjeAçıklaması":"İframe yardımı ile siteye harita konumu ekleme"
+                },
+                {
+                    "ProjeAdı":"İletişim",
+                    "ProjeTarihi":"31.03.2022",
+                    "ProjeAçıklaması":"HTML'de İletişim bilgileri bölümü yapma"
+                },
+                {
+                    "ProjeAdı":"Ders Programı",
+                    "ProjeTarihi":"24.03.2022",
+                    "ProjeAçıklaması":"HTML'de tablo yardımı ile Ders Programı Yapımı"
+                },
+                {
+                    "ProjeAdı":"Üniversite Tanıtım",
+                    "ProjeTarihi":"21.04.2022",
+                    "ProjeAçıklaması":"HTML'de tanıtım alanı yapma"
+                }
+            ];
+            var jsonveri=JSON.stringify(projeler);
+            var veri=JSON.parse(jsonveri);
+
+                for(var i=0; i<veri.length;i++)
+                {
+                    var satir="<tr>";
+                    satir+="<td>"+veri[i].ProjeAdı+"<td>";
+                    satir+="<td>"+veri[i].ProjeTarihi+"<td>";
+                    satir+="<td>"+veri[i].ProjeAçıklaması+"<td>";
+                    satir+="<tr>"    
+
+                    $("#proje").append(satir);
+                }
+
+        }) 
+    </script>
+</head>
+<body>
+    
+<table class="table table-responsive table-dark"  id="proje">
+    <tr class="justify-content-center ">
+        <td >Proje Adı</td>
+        <td></td>
+        <td  >Proje Tarihi</td>
+        <td></td>
+        <td  >Proje Açıklaması</td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>
